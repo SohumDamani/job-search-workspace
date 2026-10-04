@@ -1,0 +1,146 @@
+{
+  "sources": [
+    {
+      "id": "aprameyak",
+      "name": "2027 Tech Jobs — off-cycle and new-grad tracker",
+      "url": "https://github.com/aprameyak/2027-tech-jobs",
+      "why": "Graduation-cycle tracker with separate off-cycle internship and new-grad lists; useful for December graduation rather than only summer internships.",
+      "limits": "Community labels are not employer-confirmed eligibility. Summer 2027 roles often require continued enrollment. Filter US, 0–3 years, cloud/platform/backend/data.",
+      "access": "Public JSON feed",
+      "free": "Free public repository and search site",
+      "priority": 1,
+      "query": "new grad infrastructure cloud platform backend data 2026 2027",
+      "search_url": "https://aprameyak-jobs.vercel.app",
+      "feed": {
+        "type": "github",
+        "url": "https://raw.githubusercontent.com/aprameyak/2027-tech-jobs/main/listings.json"
+      }
+    },
+    {
+      "id": "applyguy",
+      "name": "ApplyGuy employer-linked 2027 new-grad feed",
+      "url": "https://github.com/ApplyGuy/2027-New-Grad-Jobs",
+      "why": "Machine-readable early-career feed links to employer listings; adds fresher direct career pages to a small dashboard.",
+      "limits": "Entries may include clearance roles. Use listingUrl rather than paid application links. Source's inferred entry-level label must be checked against full description.",
+      "access": "Public JSON object with jobs[], updatedAt, title, company, location, posted, listingUrl",
+      "free": "Free listing feed; optional application service separate",
+      "priority": 2,
+      "query": "cloud platform infrastructure backend software engineer I",
+      "search_url": "https://github.com/ApplyGuy/2027-New-Grad-Jobs",
+      "feed": {
+        "type": "github",
+        "url": "https://raw.githubusercontent.com/ApplyGuy/2027-New-Grad-Jobs/main/data/new-grad-jobs.json"
+      }
+    },
+    {
+      "id": "hn",
+      "name": "Hacker News — Who is hiring",
+      "url": "https://news.ycombinator.com/item?id=49922569",
+      "why": "Hiring-company posts disclose stack and direct recruiting contacts; useful for infrastructure startups and referral outreach.",
+      "limits": "Free-form posts need employer-description checks; sponsorship is often unspecified. October 2026 thread observed. No automatic assumption that remote means US eligible.",
+      "access": "Public official Firebase API; monthly parent item and child comments",
+      "free": "Free public discussion",
+      "priority": 3,
+      "query": "junior new grad Azure Terraform platform infrastructure Python React sponsor",
+      "search_url": "https://news.ycombinator.com/item?id=49922569",
+      "feed": {
+        "type": "hn",
+        "url": "https://hacker-news.firebaseio.com/v0/item/49922569.json"
+      }
+    },
+    {
+      "id": "yc",
+      "name": "Y Combinator startup engineering jobs",
+      "url": "https://www.ycombinator.com/jobs",
+      "why": "Startup-specific employer cards expose experience and will-sponsor labels, with cloud infrastructure and DevOps roles and direct founder access.",
+      "limits": "Public summaries sometimes contradict descriptions. BotBuilt new-grad badge conflicts with 3–5-year requirement and dead employer link. Require current full JD and confirm first-time sponsorship.",
+      "access": "Public discovery; free account may be needed to apply; import direct employer ATS listing",
+      "free": "Free candidate discovery/account",
+      "priority": 4,
+      "query": "DevOps infrastructure software engineer new grads will sponsor",
+      "search_url": "https://www.ycombinator.com/jobs"
+    },
+    {
+      "id": "devopshunt",
+      "name": "DevOpsHunt — DevOps/SRE/platform",
+      "url": "https://www.devopshunt.com",
+      "why": "Specific to cloud infrastructure and platform engineering; role and sponsorship filters reduce noise.",
+      "limits": "Some employer names masked. Optional applications cost credits. Aggregated sponsor tags are signals. Observed intern listing needs December-graduation check.",
+      "access": "Public browsing and free account; no public feed verified; paste employer JD",
+      "free": "Public preview/free account; paid managed applications excluded",
+      "priority": 5,
+      "query": "Azure Terraform junior early careers infrastructure intern",
+      "search_url": "https://www.devopshunt.com/jobs?visa=yes"
+    },
+    {
+      "id": "kubecareers",
+      "name": "Kube Careers — curated Kubernetes roles",
+      "url": "https://kube.careers",
+      "why": "Narrow infrastructure board with compensation and direct employer links; useful platform/SRE watchlist if Kubernetes skills are supported.",
+      "limits": "Website fetch timed out during verification. Official curated Telegram feed accessible. Many senior roles; sponsorship and Kubernetes experience need verification.",
+      "access": "Public website and official Telegram previews; no machine-readable API verified",
+      "free": "Public job previews",
+      "priority": 8,
+      "query": "United States junior platform engineer cloud Azure",
+      "search_url": "https://kube.careers"
+    },
+    {
+      "id": "gitjobs",
+      "name": "Linux Foundation GitJobs / CNCF",
+      "url": "https://gitjobs.dev",
+      "why": "Open-source cloud ecosystem source covering Kubernetes, Terraform and developer infrastructure; project-level employer discovery.",
+      "limits": "jobs.cncf.io redirects here. Only 14 listings observed, with US infrastructure jobs senior/lead; no suitable immediate recommendation found.",
+      "access": "Public site with embedding; open-source implementation; no stable public refresh endpoint verified",
+      "free": "Free public discovery",
+      "priority": 10,
+      "query": "junior cloud infrastructure Terraform internship United States",
+      "search_url": "https://gitjobs.dev"
+    },
+    {
+      "id": "databricks",
+      "name": "Databricks university and cloud engineering careers",
+      "url": "https://www.databricks.com/company/careers",
+      "why": "Direct cloud/data employer dashboard fits AWS/PySpark pipeline work and Python/backend/platform interests; dedicated early-career department.",
+      "limits": "2027 internships may require graduation fall 2027–summer 2028; reject those for December 2026. New-grad eligibility and sponsorship are role-specific.",
+      "access": "Employer career dashboard; Greenhouse token databricks is candidate endpoint requiring runtime verification",
+      "free": "Free direct applications",
+      "priority": 6,
+      "query": "new grad software engineering infrastructure systems tools cloud 2026 2027",
+      "search_url": "https://www.databricks.com/company/careers",
+      "feed": {
+        "type": "greenhouse",
+        "token": "databricks",
+        "company": "Databricks"
+      }
+    },
+    {
+      "id": "cockroachlabs",
+      "name": "Cockroach Labs early-career database/cloud engineering",
+      "url": "https://www.cockroachlabs.com/careers",
+      "why": "Direct distributed-database infrastructure employer with early-career program; official careers say sponsorship available for select roles.",
+      "limits": "Current role availability not yet confirmed through feed; early-career hiring periodic. Strong systems/Go depth may be needed. Sponsorship confirmation remains recruiter-specific.",
+      "access": "Direct career dashboard; candidate Greenhouse endpoint needs runtime verification; official recruiting email",
+      "free": "Free direct applications",
+      "priority": 7,
+      "query": "early career new grad software engineer cloud platform",
+      "search_url": "https://www.cockroachlabs.com/careers/internships",
+      "feed": {
+        "type": "greenhouse",
+        "token": "cockroachlabs",
+        "company": "Cockroach Labs"
+      }
+    },
+    {
+      "id": "servicenow",
+      "name": "ServiceNow / Moveworks infrastructure and early careers",
+      "url": "https://careers.servicenow.com/teams/ai-engineering-product/",
+      "why": "Actual current Core Infrastructure New Grad opening matches cloud automation and backend development. Direct employer engineering dashboard includes developer productivity and global cloud services.",
+      "limits": "Role-specific future sponsorship and December graduation/start window unspecified. Export-controlled work may require employer approval.",
+      "access": "Public employer HTML and SmartRecruiters application link; manual import supported",
+      "free": "Free employer career search and applications",
+      "priority": 6,
+      "query": "new grad core infrastructure cloud developer productivity",
+      "search_url": "https://careers.servicenow.com/jobs/"
+    }
+  ]
+}
