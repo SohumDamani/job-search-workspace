@@ -89,12 +89,16 @@
       "name": "Linux Foundation GitJobs / CNCF",
       "url": "https://gitjobs.dev",
       "why": "Open-source cloud ecosystem source covering Kubernetes, Terraform and developer infrastructure; project-level employer discovery.",
-      "limits": "jobs.cncf.io redirects here. Only 14 listings observed, with US infrastructure jobs senior/lead; no suitable immediate recommendation found.",
-      "access": "Public site with embedding; open-source implementation; no stable public refresh endpoint verified",
+      "limits": "Summary cards only; parser fails safely if schema changes. No suitable title was found in the last bounded pass. Employer policy and deadlines remain source-reported/unknown.",
+      "access": "Official open-source public HTML job-card route; automatic local discovery and paired hosted refresh",
       "free": "Free public discovery",
       "priority": 10,
       "query": "junior cloud infrastructure Terraform internship United States",
-      "search_url": "https://gitjobs.dev"
+      "search_url": "https://gitjobs.dev",
+      "feed": {
+        "type": "gitjobs",
+        "url": "https://gitjobs.dev/section/jobs/results"
+      }
     },
     {
       "id": "databricks",
@@ -135,12 +139,17 @@
       "name": "ServiceNow / Moveworks infrastructure and early careers",
       "url": "https://careers.servicenow.com/teams/ai-engineering-product/",
       "why": "Actual current Core Infrastructure New Grad opening matches cloud automation and backend development. Direct employer engineering dashboard includes developer productivity and global cloud services.",
-      "limits": "Role-specific future sponsorship and December graduation/start window unspecified. Export-controlled work may require employer approval.",
-      "access": "Public employer HTML and SmartRecruiters application link; manual import supported",
+      "limits": "Discovery summaries only; no full description, initial OPT, future sponsorship or deadline confirmation. Relevant titles still require a fit review.",
+      "access": "Documented public SmartRecruiters API; bounded US summary refresh",
       "free": "Free employer career search and applications",
       "priority": 6,
       "query": "new grad core infrastructure cloud developer productivity",
-      "search_url": "https://careers.servicenow.com/jobs/"
+      "search_url": "https://careers.servicenow.com/jobs/",
+      "feed": {
+        "type": "smartrecruiters",
+        "token": "ServiceNow",
+        "company": "ServiceNow"
+      }
     }
   ]
 }
