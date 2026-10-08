@@ -1,0 +1,89 @@
+{
+  "updated_at": "2026-10-08T00:34:14.694346+00:00",
+  "tasks": [
+    {
+      "id": "models",
+      "title": "Local models: qwen3.5:4b active",
+      "status": "done",
+      "detail": "Ollama + GitHub Laya. Also installed: qwen2.5:7b, qwen3:8b, qwen3.5:9b; these are inactive. No paid Jev calls or weight fine-tuning."
+    },
+    {
+      "id": "opt",
+      "title": "OPT-first results",
+      "status": "done",
+      "detail": "Role-level OPT evidence required; H-1B optional. Unknowns go to Check OPT. Browser verification is optional."
+    },
+    {
+      "id": "profile",
+      "title": "Versioned master profile and resume",
+      "status": "done",
+      "detail": "Master profile, LinkedIn history, resume upload/download, safe revisions and private backup restore are implemented and tested."
+    },
+    {
+      "id": "network",
+      "title": "LinkedIn referral matches",
+      "status": "done",
+      "detail": "Company matches and contact records retained; connections remain private."
+    },
+    {
+      "id": "queues",
+      "title": "FANG preparation and startup queues",
+      "status": "done",
+      "detail": "Separate preparation and application checklists; you submit applications."
+    },
+    {
+      "id": "outreach",
+      "title": "Specialized outreach drafts",
+      "status": "done",
+      "detail": "Local planning, messaging playbooks and approved examples. Drafts remain yours to review and send."
+    },
+    {
+      "id": "services",
+      "title": "Five job-service update queues",
+      "status": "done",
+      "detail": "Handshake, Dice, YC, Wellfound and Simplify registry, existing-account records and factual update tasks built."
+    },
+    {
+      "id": "accounts",
+      "title": "External account connections",
+      "status": "needs_action",
+      "detail": "Sign in to existing accounts. Unsupported personal-profile APIs use manual/browser-assisted tasks; no automatic sync claimed."
+    },
+    {
+      "id": "gmail",
+      "title": "Read-only Gmail job alerts",
+      "status": "needs_action",
+      "detail": "Local OAuth importer and deduplication built. Requires a Google Desktop OAuth client and your sign-in."
+    },
+    {
+      "id": "schedule",
+      "title": "Local background schedule",
+      "status": "done",
+      "detail": "Hourly awake imports; 2-6 a.m. Pacific review window, plugged in and idle. Unattended AI is disabled."
+    },
+    {
+      "id": "feedback",
+      "title": "Private source feedback",
+      "status": "done",
+      "detail": "Shown, selected, applied and incorrect-information outcomes deduplicated per role/source."
+    },
+    {
+      "id": "model",
+      "title": "Reliable unattended AI ranking",
+      "status": "deferred",
+      "detail": "20 actual descriptions tested: 55% exact and 65% allowed-tier agreement; semantic errors found. Local Qwen reviews remain advisory."
+    },
+    {
+      "id": "release",
+      "title": "Release tests and public bundle",
+      "status": "done",
+      "detail": "86 Python checks, 10 Gmail checks, 46 Node checks, 20 hosted browser checks and 42 stress scenarios passed. Live local page checked."
+    },
+    {
+      "id": "guide",
+      "title": "Complete editable project guide",
+      "status": "done",
+      "detail": "PROJECT-GUIDE.md documents exact models, components, workflow, setup, file/API map, evaluation and remaining work."
+    }
+  ]
+}

@@ -22,7 +22,7 @@ jobs:
       - name: Upload only public frontend assets
         run: |
           mkdir -p public
-          cp index.html app.js styles.css offline.js job-sources.json .nojekyll public/
+          cp index.html app.js action-center.js ui-state.js styles.css offline.js opt-policy.js workspace-state.js workspace-ui.js workspace-progress.js work-progress.json job-sources.json job-services.json .nojekyll public/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
