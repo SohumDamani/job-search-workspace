@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-10-08T00:34:14.694346+00:00",
+  "updated_at": "2026-10-10T04:31:06.989Z",
   "tasks": [
+    {
+      "id": "daily-use-readiness",
+      "title": "Ready for daily use",
+      "status": "done",
+      "detail": "Core daily controls verified: jobs/queues/connections, profile/resume, tracking, outreach and positive replies. Failed-save/retry checks pass. Fresh 3-account Gmail import and 7 feeds succeeded. OPT coverage limited; gradual coverage upgrades remain."
+    },
     {
       "id": "models",
       "title": "Local models: qwen3.5:4b active",
@@ -52,8 +58,8 @@
     {
       "id": "gmail",
       "title": "Read-only Gmail job alerts",
-      "status": "needs_action",
-      "detail": "Local OAuth importer and deduplication built. Requires a Google Desktop OAuth client and your sign-in."
+      "status": "done",
+      "detail": "All three inboxes currently connected; primary refresh succeeded with matching saved OAuth client. New grant reports seven-day lifetime. All three read-only imports succeeded."
     },
     {
       "id": "schedule",
@@ -68,12 +74,6 @@
       "detail": "Shown, selected, applied and incorrect-information outcomes deduplicated per role/source."
     },
     {
-      "id": "model",
-      "title": "Reliable unattended AI ranking",
-      "status": "deferred",
-      "detail": "20 actual descriptions tested: 55% exact and 65% allowed-tier agreement; semantic errors found. Local Qwen reviews remain advisory."
-    },
-    {
       "id": "release",
       "title": "Release tests and public bundle",
       "status": "done",
@@ -84,6 +84,213 @@
       "title": "Complete editable project guide",
       "status": "done",
       "detail": "PROJECT-GUIDE.md documents exact models, components, workflow, setup, file/API map, evaluation and remaining work."
+    },
+    {
+      "id": "gmail-dashboard",
+      "title": "Simple Gmail recommendations and positive replies",
+      "status": "done",
+      "detail": "Direct email job links enter Browse/FANG queues; generic scope visible by default. Positive replies and actions shown in navigation and Next Actions; rejection/confirmation email cards hidden. Independent fixtures and live local UI checks pass. Opaque links and full-description enrichment deferred."
+    },
+    {
+      "id": "gradual-upgrades",
+      "title": "Small upgrades after daily use",
+      "status": "deferred",
+      "detail": "Prioritize fresh jobs, reliable imports and referral usefulness. Native-token/model experiments and unsupported sync are deferred."
+    },
+    {
+      "id": "local-advisory-review",
+      "title": "Local advisory review",
+      "status": "done",
+      "detail": "Local qwen3.5:4b completed in 22.8s. One candidate proof quote did not match its cited fact; the existing validator removed that evidence and retained an advisory Tier 3/manual-review result. No rerun or unattended adoption."
     }
-  ]
+  ],
+  "history": [
+    {
+      "id": "model",
+      "title": "Reliable unattended AI ranking",
+      "status": "deferred",
+      "detail": "20 actual descriptions tested: 55% exact and 65% allowed-tier agreement; semantic errors found. Local Qwen reviews remain advisory."
+    },
+    {
+      "id": "extraction-review",
+      "title": "Agent review: structured extraction",
+      "status": "done",
+      "detail": "Existing JSON validation retained; isolated literal requirement extraction recommended. No model switch."
+    },
+    {
+      "id": "matching-review",
+      "title": "Agent review: embeddings and proof",
+      "status": "done",
+      "detail": "Preserve cited evidence and scope. Similarity is optional retrieval, not a fit percentage."
+    },
+    {
+      "id": "qa-review",
+      "title": "Independent feature and release audit",
+      "status": "done",
+      "detail": "Public release matches; 7 progress-panel checks passed. Future unattended approval needs exact model/rubric binding."
+    },
+    {
+      "id": "cleanup",
+      "title": "Conservative repository cleanup",
+      "status": "done",
+      "detail": "gpt-6-luna · low effort: 13 unused rewrite helpers removed; runtime/data preserved; 8 module syntax checks passed. See REPO-CLEANUP.md."
+    },
+    {
+      "id": "shadow-extraction",
+      "title": "Shadow extraction development",
+      "status": "done",
+      "detail": "gpt-6.1-sol · medium: isolated JD-only prototype built; no production integration or model change. Roughly 2 KB input limit."
+    },
+    {
+      "id": "shadow-qa",
+      "title": "Independent shadow extraction tests",
+      "status": "done",
+      "detail": "gpt-6.1-sol · medium: 38 offline cases passed after 4 fixes; live accuracy and completeness remain unverified."
+    },
+    {
+      "id": "model-comparison",
+      "title": "First live local-model comparison",
+      "status": "done",
+      "detail": "Both models: 0 grounded outputs, 10 input rejections and 6 invalid outputs each. No model switch; first prototype rejected."
+    },
+    {
+      "id": "heldout-gold",
+      "title": "Independent held-out requirement labels",
+      "status": "done",
+      "detail": "5 calibration excerpts, 8 complete held-out descriptions and 3 adversarial fixtures frozen before model outputs; literal quotes and source hashes verified."
+    },
+    {
+      "id": "approval-binding",
+      "title": "Bind unattended approval to evaluated runtime",
+      "status": "done",
+      "detail": "gpt-6.1-sol · medium: tested runtime identity binding, fail-closed prechecks and case provenance; backend restarted. Unattended ranking remains disabled."
+    },
+    {
+      "id": "approval-binding-qa",
+      "title": "Independent approval-gate review",
+      "status": "done",
+      "detail": "gpt-6.1-sol · high: 34 focused tests pass; 55 API/worker/OPT regression tests pass. Stale approvals rejected."
+    },
+    {
+      "id": "source-unit-extraction",
+      "title": "Python-grounded source-unit experiment",
+      "status": "done",
+      "detail": "Offline experiment built; production unchanged. Three held-out descriptions contain oversized units and remain unsupported. Live model comparison is deferred while Gmail connection takes priority."
+    },
+    {
+      "id": "source-unit-qa",
+      "title": "Independent source-unit checks",
+      "status": "done",
+      "detail": "32 source-unit tests passed, including 25 independent checks. Full-description semantic correctness remains unproven; this experiment is not enabled in production."
+    },
+    {
+      "id": "gmail-multiaccount",
+      "title": "Three-account Gmail support",
+      "status": "done",
+      "detail": "Three-account support loaded locally: isolated protected credentials, identity checks, individual controls, preserved checkpoints and shared job deduplication. Hosted controls await publication."
+    },
+    {
+      "id": "gmail-multiaccount-qa",
+      "title": "Independent Gmail account tests",
+      "status": "done",
+      "detail": "Initial mailbox identities and read-only imports were confirmed. Account isolation, consent recovery and synthetic DOM checks passed; primary authorization now needs reconnecting."
+    },
+    {
+      "id": "gmail-application-updates",
+      "title": "Recommendations and application updates",
+      "status": "done",
+      "detail": "Backend loaded locally: private advisory application updates and original-Gmail recommendation fallback, separate checkpoints, no automatic application-state or OPT changes. Hourly awake imports check newest 50 plus backlog 50 candidates per account."
+    },
+    {
+      "id": "gmail-updates-ui",
+      "title": "Private Gmail update cards",
+      "status": "done",
+      "detail": "Private cards, account/category filters, escaped newest-text excerpts, original mailbox Gmail links and local review controls implemented; synthetic UI checks passed. Hosted new controls are not published."
+    },
+    {
+      "id": "gmail-updates-qa",
+      "title": "Independent update import tests",
+      "status": "done",
+      "detail": "87 scoped tests passed, including 25 independent update checks. Administrative/marketing negatives, genuine hiring positives, quotes/CSS, recommendation fallback, account isolation, bounded import and private API behavior checked. Two connected inboxes completed live scans; all-three validation awaits primary consent."
+    },
+    {
+      "id": "gmail-live-validation",
+      "title": "Live three-account Gmail validation",
+      "status": "done",
+      "detail": "Bounded stored-card maintenance completed: 60 cards reclassified, four unreviewed non-application cards excluded, original mail unchanged. Final read-only pass verified all 105 remaining cards without fetch failures; live API serves 105 and all three accounts remain Connected. Private backups pass SQLite integrity checks. General inbox precision/recall and complete backlog coverage remain unproven."
+    },
+    {
+      "id": "source-unit-live-comparison",
+      "title": "Live source-unit model comparison",
+      "status": "done",
+      "detail": "16 model/case runs completed: 4b one structurally grounded but semantically contaminated output, seven incomplete; 7b eight incomplete. Both fail calibration; no adoption. 38 offline checks pass. Held-out cases preserved."
+    },
+    {
+      "id": "source-choice-validation",
+      "title": "Literal alternative validation successor",
+      "status": "done",
+      "detail": "Isolated guarded helper independently passed 63 combined checks. Correct one-or-more lists and contextual React/React Native spans; tail/cropped-range repairs tested. Baseline and production remain unchanged; model quality not approved."
+    },
+    {
+      "id": "gmail-refresh-diagnostics",
+      "title": "Clear Gmail refresh diagnostics",
+      "status": "done",
+      "detail": "Loaded after 110 scoped tests, including 17 independent auth/status checks. Rejected grants, Desktop OAuth config errors and temporary failures distinguished; protected credentials/checkpoints preserved. All three connections remain healthy. Historical failure cause unknown; primary newgrant reports seven-day lifetime."
+    },
+    {
+      "id": "gmail-classification-precision",
+      "title": "Application-email classification repairs",
+      "status": "done",
+      "detail": "136 combined regression tests passed; independent precision review covers 19 invented cases. Repairs loaded locally; all three accounts Connected after restart. Existing-card backfill remains separate; general inbox accuracy is unproven."
+    },
+    {
+      "id": "source-clause-representation",
+      "title": "Python-grounded clause representation",
+      "status": "done",
+      "detail": "42 authored and independent synthetic tests pass. Independent review approved source boundaries, indentation parentage, exact spans, conditions and supported nested logic. This is representation only; no model inference or semantic/adoption gate has passed."
+    },
+    {
+      "id": "source-clause-decisions",
+      "title": "Source-backed model decision contract",
+      "status": "done",
+      "detail": "Isolated decision validator independently reviewed; 79 combined synthetic representation/decision tests pass. Source-ID and cue locality validated. Semantic accuracy unproven; no production integration or new model inference."
+    },
+    {
+      "id": "source-clause-transport",
+      "title": "Isolated native local-model transport",
+      "status": "done",
+      "detail": "16 authored and 21 independent mock transport tests pass; 116 combined clause checks pass. Whole-context bounded requests and failure provenance verified. Deadlines cooperative; no model inference, semantic pass or production adoption."
+    },
+    {
+      "id": "source-clause-calibration-runner",
+      "title": "Calibration runner and independent semantic audit",
+      "status": "done",
+      "detail": "20 authored and 32 independent runner tests pass; 168 combined clause tests. Approved dataset/model hashes, subprocess watchdog and unreviewed audit artifacts independently checked. Isolated software approval only."
+    },
+    {
+      "id": "source-clause-calibration-comparison",
+      "title": "Local comparison and semantic review",
+      "status": "done",
+      "detail": "All 16 native trials and both independent semantic audits complete. All eight cases fail for each model: qualification recall 4b 5/42, 7b 1/42. No held-out advancement or adoption. See SOURCE-CLAUSE-COMPARISON-V2-REVIEW.md."
+    },
+    {
+      "id": "source-clause-compact-context",
+      "title": "Compact context experiment rejected",
+      "status": "done",
+      "detail": "Rejected as known-coverage repair: 23 authored/independent checks pass, but all22 Crusoe roots still unprocessed. Budget17412 to13605 remains above8192; no inference or adoption."
+    },
+    {
+      "id": "source-clause-scoped-context",
+      "title": "Scoped context experiment rejected",
+      "status": "done",
+      "detail": "19 combined authored/independent checks pass; known22 roots still skipped, budgets9870-10185 over8192. Rejected as coverage repair; no inference/adoption."
+    },
+    {
+      "id": "source-clause-token-budget",
+      "title": "Native token reference; generation parity pending",
+      "status": "working",
+      "detail": "23 authored/independent checks pass. Corrected v2 invented native diagnostic finished: bothspecialsettingsidentical48IDs, Unicodepreserved; recoveredbindingSHAmatches. Native admission/generationparity unfinished, bytefallback retained. See NATIVE-REFERENCE-LIVE-REVIEW.md."
+    }
+  ],
+  "goal": "Daily use first; gradual tested upgrades"
 }
